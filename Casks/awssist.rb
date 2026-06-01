@@ -1,6 +1,6 @@
 cask "awssist" do
-  version "0.2.0"
-  sha256 "4d1afe40980aa28265932496d1f574b53905088a385e451cb1f114243f14aa40"
+  version "0.2.1"
+  sha256 "6d67789a26b7a14db1664129cfb50d9424cc021b807435f9788005eb251f57c8"
 
   url "https://github.com/petro-t/awssist/releases/download/v#{version}/AWSsist-#{version}-arm64.dmg",
       verified: "github.com/petro-t/awssist/"
