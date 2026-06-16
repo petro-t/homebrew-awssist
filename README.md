@@ -7,8 +7,13 @@ profile and session manager.
 
 ```sh
 brew tap petro-t/awssist
+brew trust petro-t/awssist           # one-time: Homebrew 6.0+ gates third-party taps
 brew install --cask awssist
 ```
+
+If you'd rather skip the trust step, run with
+`HOMEBREW_NO_REQUIRE_TAP_TRUST=1 brew install --cask awssist`, or
+`export HOMEBREW_NO_REQUIRE_TAP_TRUST=1` in your shell rc to opt out globally.
 
 ## Upgrade
 
