@@ -22,9 +22,7 @@ cask "awssist" do
   # Stripping the quarantine xattr that Homebrew applies to the downloaded DMG
   # lets the user open the app normally on first launch.
   postflight_steps do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/AWSsist.app"],
-                   sudo: false
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/AWSsist.app"]
   end
 
   uninstall quit: "com.awssist.app"
